@@ -7,51 +7,34 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Georgia, serif; color: #1a1a1a; background: #fafaf8; }
-    .hero { padding: 4rem 2rem 3rem; border-bottom: 1px solid #e5e5e0; max-width: 700px; margin: 0 auto; }
-    .hero-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #888; margin-bottom: 1rem; font-family: Arial, sans-serif; }
-    .hero-name { font-size: 36px; font-weight: normal; line-height: 1.2; margin-bottom: 0.5rem; }
-    .hero-title { font-size: 16px; color: #666; margin-bottom: 2rem; font-family: Arial, sans-serif; }
-    .hero-divider { width: 40px; height: 1.5px; background: #1a1a1a; margin-bottom: 2rem; }
-    .hero-desc { font-size: 15px; color: #555; line-height: 1.8; margin-bottom: 2.5rem; }
-    .btn-download { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: #1a1a1a; color: #fff; border-radius: 6px; font-size: 14px; text-decoration: none; font-family: Arial, sans-serif; }
+    .header { padding: 3rem 2rem 2rem; border-bottom: 1px solid #e5e5e0; max-width: 700px; margin: 0 auto; }
+    .label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #888; margin-bottom: 1rem; font-family: Arial, sans-serif; }
+    .name { font-size: 36px; font-weight: normal; margin-bottom: 0.5rem; }
+    .divider { width: 40px; height: 1.5px; background: #1a1a1a; margin: 1.5rem 0; }
+    .contact-row { font-size: 14px; color: #555; font-family: Arial, sans-serif; padding: 6px 0; }
+    .btn-download { display: inline-flex; align-items: center; gap: 8px; margin-top: 1.5rem; padding: 12px 24px; background: #1a1a1a; color: #fff; border-radius: 6px; font-size: 14px; text-decoration: none; font-family: Arial, sans-serif; }
     .btn-download:hover { background: #333; }
-    .section { padding: 2.5rem 2rem; border-bottom: 1px solid #e5e5e0; max-width: 700px; margin: 0 auto; }
-    .section-label { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #888; margin-bottom: 1.5rem; font-family: Arial, sans-serif; }
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; }
-    .skill-card { background: #f0efe9; border-radius: 8px; padding: 1rem; }
-    .skill-name { font-size: 13px; font-weight: bold; margin-bottom: 4px; font-family: Arial, sans-serif; }
-    .skill-desc { font-size: 12px; color: #777; line-height: 1.5; font-family: Arial, sans-serif; }
-    .contact-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #e5e5e0; font-size: 14px; color: #555; font-family: Arial, sans-serif; }
-    .contact-row:last-child { border-bottom: none; }
-    .footer { padding: 1.5rem 2rem; text-align: center; font-size: 12px; color: #aaa; font-family: Arial, sans-serif; }
+    .portfolio-section { padding: 2rem; max-width: 700px; margin: 0 auto; }
+    .footer { padding: 1.5rem 2rem; text-align: center; font-size: 12px; color: #aaa; font-family: Arial, sans-serif; border-top: 1px solid #e5e5e0; }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <p class="hero-label">Portfolio</p>
-    <h1 class="hero-name">Sasan Dehghan</h1>
-    <p class="hero-title">Landscape Architect &amp; Designer</p>
-    <div class="hero-divider"></div>
-    <p class="hero-desc">Creating thoughtful spaces where architecture meets nature. Specialising in sustainable landscape design, urban planning, and site-responsive architecture.</p>
+
+  <div class="header">
+    <p class="label">Portfolio</p>
+    <h1 class="name">Sasan Dehghan</h1>
+    <div class="divider"></div>
+    <p class="contact-row">✉ your.email@example.com</p>
+    <p class="contact-row">📞 +1 234 567 890</p>
+    <p class="contact-row">📍 Your City, Country</p>
     <a href="Question B.pdf" download class="btn-download">⬇ Download portfolio</a>
   </div>
 
-  <div class="section">
-    <p class="section-label">Expertise</p>
-    <div class="skills-grid">
-      <div class="skill-card"><p class="skill-name">Landscape design</p><p class="skill-desc">Parks, gardens, and public green spaces</p></div>
-      <div class="skill-card"><p class="skill-name">Architecture</p><p class="skill-desc">Site-responsive building design</p></div>
-      <div class="skill-card"><p class="skill-name">Urban planning</p><p class="skill-desc">Sustainable city and town design</p></div>
-      <div class="skill-card"><p class="skill-name">Environmental</p><p class="skill-desc">Ecological and sustainable solutions</p></div>
-    </div>
-  </div>
-
-  <div class="section">
-    <p class="section-label">Contact</p>
-    <div class="contact-row">✉ your.email@example.com</div>
-    <div class="contact-row">📍 Your City, Country</div>
+  <div class="portfolio-section">
+    <embed src="Question B.pdf" type="application/pdf" width="100%" height="850px" />
   </div>
 
   <div class="footer">© 2026 Sasan Dehghan · All rights reserved</div>
+
 </body>
 </html>
